@@ -3,6 +3,8 @@ import java.util.stream.Collectors;
 
 public final class Board {
 
+    //TODO REMOVE
+    public static int getNextBoards = 0;
 
     /**
      * Representation of the noughts and crosses board. Accessed by board[row][col]:
@@ -54,6 +56,7 @@ public final class Board {
 
 
     public List<Board> getPossibleNextMoves(Piece player) {
+        getNextBoards++;
         return spaces
                 .stream()
                 .map(c -> new Board(this, player, c.ROW, c.COLUMN))
