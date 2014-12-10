@@ -54,12 +54,6 @@ public class BoardTest {
         double end = time();
 
         System.out.println("Time taken: " + (end - start));
-        System.out.println("Minimax called: " + MiniMax.minimaxCalled);
-        System.out.println("Wins: " + MiniMax.wins);
-        System.out.println("Losses: " + MiniMax.losses);
-        System.out.println("Draws: " + MiniMax.draws);
-        System.out.println("Empty board reached: " + MiniMax.emptyBoard);
-        System.out.println("Get Next boards called: " + Board.getNextBoards);
 
     }
 
